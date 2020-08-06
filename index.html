@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="site">
+
+      <header class="site-header">
+        <div class="header-container">
+          <div class="logo">
+            <a href="http://vikimast.ru/">
+              <img src="img/myface.svg" alt=Logo" width="68" height="58" />
+            </a>
+          </div>
+          <div class="menu-container">
+            <nav class="menu">
+              <div class="menu-item">
+                <a href="http://vikimast.ru/">проекты</a>
+              </div>
+              <div class="menu-item">
+                <a href="pages/contacts">контакты</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-content">
+
+        <section class="page-item">
+          <div class="page-item-wrapper">
+            <img class="page-img" src="img/zenit/zenit-1.jpg" alt="">
+            <div class="img-mask">
+              <a href="pages/zenit" class="page-item-link">
+                <span>ФК Зенит</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-item">
+          <div class="page-item-wrapper">
+            <img class="page-img" src="img/kagozel.jpg" alt="">
+            <div class="img-mask">
+              <a href="pages/kagozel" class="page-item-link">
+                <span>Кагоцел</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-item">
+          <div class="page-item-wrapper">
+            <img class="page-img" src="img/rosbank-1.jpg" alt="">
+            <div class="img-mask">
+              <a href="pages/rosbank" class="page-item-link">
+                <span>Росбанк</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-item">
+          <div class="page-item-wrapper">
+            <img class="page-img" src="img/pic1.jpg" alt="">
+            <div class="img-mask">
+              <a href="pages/sredasun" class="page-item-link">
+                <span>SREDA SUN</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-item">
+          <div class="page-item-wrapper">
+              <img class="page-img" src="img/perekrestok-main.jpg" alt="">
+              <div class="img-mask">
+                <a href="pages/perekrestok" class="page-item-link">
+                  <span>Перекрёсток</span>
+                </a>
+              </div>
+          </div>
+        </section>
+
+        <section class="page-item">
+          <div class="page-item-wrapper">
+            <img class="page-img" src="img/lenta-1.jpg" alt="">
+            <div class="img-mask">
+              <a href="pages/lenta" class="page-item-link">
+                <span>Лента</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-item">
+          <div class="page-item-wrapper">
+              <img class="page-img" src="img/Sreda-1.jpg" alt="">
+              <div class="img-mask">
+                <a href="pages/sreda" class="page-item-link">
+                  <span>SREDA</span>
+                </a>
+              </div>
+          </div>
+        </section>
+
+        <section class="page-item">
+          <div class="page-item-wrapper">
+              <img class="page-img" src="img/fashion-1.jpg" alt="">
+              <div class="img-mask">
+                <a href="pages/rosbank-2" class="page-item-link">
+                  <span>Росбанк</span>
+                </a>
+              </div>
+          </div>
+        </section>
+
+<!--        <section class="page-item">-->
+<!--          <div class="page-item-wrapper" onclick="showFullImage()">-->
+<!--            <img class="page-img" src="img/kagozel.jpg" alt="">-->
+<!--            <div class="close">-->
+<!--              <i class="close-icon"></i>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </section>-->
+
+      </div>
+
+  </div>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+
+   const showFullImage = () => {
+     let body = document.getElementsByTagName('body');
+     let el = event.currentTarget;
+
+     el.classList.toggle('opened');
+     el.lastElementChild.classList.toggle('show');
+
+     body[0].classList.toggle('ovf-hidden');
+   }
+
+  </script>
+</body>
+
+</html>
